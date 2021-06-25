@@ -363,6 +363,16 @@ nav.show div.icon-close {
 #testimonials {
   background: white;
 }
+#testimonials header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+}
+
+#testimonials .container {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 #testimonials blockquote {
   padding: 2rem;
@@ -373,6 +383,8 @@ nav.show div.icon-close {
 #testimonials blockquote p {
   position: relative;
   text-indent: 1.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--title-color);
 }
 
 #testimonials blockquote p span {
@@ -383,9 +395,29 @@ nav.show div.icon-close {
   left: -1.875rem;
   color: var(--base-color);
 }
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
 
 #testimonials cite img {
   width: 2rem;
   height: 2rem;
-  border-radius: 1rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: 0.5rem;
+}
+/*=====SWIPER==== */
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
 }
